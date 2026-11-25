@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Trim | Weekly Time Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Time Trim home">
+        <span class="brand-mark">T</span>
+        <span>time<span class="brand-light">trim</span></span>
+      </a>
+
+      <p class="nav-heading">WORKSPACE</p>
+      <nav class="nav">
+        <a class="nav-link active" href="#timesheet"><span>▦</span> Timesheet</a>
+        <a class="nav-link" href="#summary"><span>▤</span> Weekly summary</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="help-icon">?</div>
+        <div><strong>Keep your week in focus</strong><small>Small steps make a productive week.</small></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb">Workspace <span>/</span> Time tracker</div>
+        <div class="profile"><span class="avatar">U</span><span>My workspace</span></div>
+      </header>
+
+      <section class="welcome">
+        <div>
+          <p class="eyebrow">YOUR TIME, ORGANIZED</p>
+          <h1>Good morning! <span>✦</span></h1>
+          <p class="subheading">A clear view of where your week goes.</p>
+        </div>
+        <div class="week-pill"><span class="calendar-icon">▦</span> Weekly overview <b>▾</b></div>
+      </section>
+
+      <section class="stats" id="summary" aria-label="Weekly summary">
+        <article class="stat-card highlight">
+          <div class="stat-top"><span>Total hours</span><span class="stat-icon">◷</span></div>
+          <div class="stat-value">32h 30m</div>
+          <div class="stat-note">Recorded this week</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span>Daily average</span><span class="stat-icon">⌁</span></div>
+          <div class="stat-value">6h 30m</div>
+          <div class="stat-note">Across 5 working days</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span>Most productive</span><span class="stat-icon">✧</span></div>
+          <div class="stat-value">Wednesday</div>
+          <div class="stat-note">8 hours recorded</div>
+        </article>
+      </section>
+
+      <section class="panel" id="timesheet">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">MODULE 01</p>
+            <h2>Weekly timesheet</h2>
+            <p class="panel-description">Your daily activity at a glance.</p>
+          </div>
+          <span class="date-label">NOV 16 – NOV 22, 2026</span>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>DAY</th><th>DATE</th><th>ACTIVITY</th><th>START</th><th>END</th><th>TOTAL</th><th>STATUS</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Monday</strong></td><td>16 Nov</td><td><span class="activity-dot blue"></span>Study &amp; planning</td><td>09:00 AM</td><td>04:00 PM</td><td class="hours">7h 00m</td><td><span class="status done">Completed</span></td></tr>
+              <tr><td><strong>Tuesday</strong></td><td>17 Nov</td><td><span class="activity-dot purple"></span>Project work</td><td>09:30 AM</td><td>03:30 PM</td><td class="hours">6h 00m</td><td><span class="status done">Completed</span></td></tr>
+              <tr><td><strong>Wednesday</strong></td><td>18 Nov</td><td><span class="activity-dot green"></span>Development</td><td>09:00 AM</td><td>05:00 PM</td><td class="hours">8h 00m</td><td><span class="status done">Completed</span></td></tr>
+              <tr><td><strong>Thursday</strong></td><td>19 Nov</td><td><span class="activity-dot orange"></span>Research</td><td>10:00 AM</td><td>04:30 PM</td><td class="hours">6h 30m</td><td><span class="status done">Completed</span></td></tr>
+              <tr><td><strong>Friday</strong></td><td>20 Nov</td><td><span class="activity-dot blue"></span>Revision</td><td>09:00 AM</td><td>02:00 PM</td><td class="hours">5h 00m</td><td><span class="status done">Completed</span></td></tr>
+              <tr class="muted-row"><td><strong>Saturday</strong></td><td>21 Nov</td><td>—</td><td>—</td><td>—</td><td class="hours">—</td><td><span class="status pending">Upcoming</span></td></tr>
+              <tr class="muted-row"><td><strong>Sunday</strong></td><td>22 Nov</td><td>—</td><td>—</td><td>—</td><td class="hours">—</td><td><span class="status pending">Upcoming</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-foot"><span><span class="legend-dot"></span> Sample timesheet data for demonstration</span><span>Weekly total <strong>32h 30m</strong></span></div>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="panel summary-panel">
+          <div class="panel-heading compact">
+            <div><p class="eyebrow">MODULE 02</p><h2>Weekly summary</h2></div>
+            <span class="mini-tag">This week</span>
+          </div>
+          <div class="summary-total"><strong>32h 30m</strong><span>total tracked time</span></div>
+          <div class="bar-chart" aria-label="Daily hours chart">
+            <div class="bar-item"><div class="bar-track"><div class="bar-fill" style="height:87%"></div></div><span>Mon</span></div>
+            <div class="bar-item"><div class="bar-track"><div class="bar-fill" style="height:75%"></div></div><span>Tue</span></div>
+            <div class="bar-item"><div class="bar-track"><div class="bar-fill peak" style="height:100%"></div></div><span>Wed</span></div>
+            <div class="bar-item"><div class="bar-track"><div class="bar-fill" style="height:81%"></div></div><span>Thu</span></div>
+            <div class="bar-item"><div class="bar-track"><div class="bar-fill" style="height:62%"></div></div><span>Fri</span></div>
+            <div class="bar-item"><div class="bar-track"><div class="bar-fill empty" style="height:0%"></div></div><span>Sat</span></div>
+            <div class="bar-item"><div class="bar-track"><div class="bar-fill empty" style="height:0%"></div></div><span>Sun</span></div>
+          </div>
+          <div class="chart-legend"><span><i></i> Hours recorded per day</span><span>Max: 8h</span></div>
+        </article>
+
+        <article class="panel insight-panel">
+          <div class="insight-symbol">✦</div>
+          <p class="eyebrow">WEEKLY INSIGHT</p>
+          <h2>Wednesday was your strongest day.</h2>
+          <p>You recorded 8 hours of activity. Keep using your timesheet to understand your routine and plan your time.</p>
+          <div class="insight-footer"><span class="tiny-check">✓</span> You're building a consistent habit</div>
+        </article>
+      </section>
+
+      <footer>© 2026 Time Trim <span>Simple time tracking, clearer days.</span></footer>
+    </main>
+  </div>
+</body>
+</html>
